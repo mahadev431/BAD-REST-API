@@ -41,7 +41,7 @@ namespace SwaggerAPI.Controllers
             List<Tweet> listToAdd = new List<Tweet>();
 
             //Pulling the data for 24 months by adding each month to base value of date;
-            for (int i = 1; i < 3; i++)
+            for (int i = 1; i < 25; i++)
             {
                 date1 = startDate.AddMonths(i).ToString("o");//"2018-03-20T04:07:56.271Z";
                 date2 = startDate.ToString("o");
