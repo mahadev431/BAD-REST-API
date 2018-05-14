@@ -84,7 +84,7 @@ namespace SwaggerAPI.Controllers
                     initialList.AddRange(listToAdd);
                 }
             }
-            return View(initialList);
+            return View(initialList.Distinct());
         }
 
         public class LoggingHandler : DelegatingHandler
